@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 table {
     border-collapse: collapse;
     margin: 15px 0;
@@ -8,3 +12,14 @@ td, th {
     padding: 5px 10px;
 }
 
+.coffee-div {
+    padding-right: 0;
+    padding-left: 0;
+}
+.button1 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
