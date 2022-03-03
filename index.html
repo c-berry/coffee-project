@@ -9,16 +9,34 @@
 <body>
     <h1 class="text-center">Coffee!</h1>
 <!--    COFFEE TYPE SELECTOR-->
-<div id="big-div container-fluid ">
+<div id="big-div container-fluid">
     <form class="col-6 ">
         <div class="row" >
-        <label for="roast-selection"></label>
+        <label for="roast-selection" class="form-label">Roast</label>
         <select id="roast-selection">
             <option>light</option>
             <option>medium</option>
             <option>dark</option>
         </select>
         </div>
+        <label for="exampleDataList" class="form-label">Coffee Name</label>
+        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+        <datalist id="datalistOptions">
+            <option value="Light City">
+            <option value="Half City">
+            <option value="Cinnamon">
+            <option value="City">
+            <option value="American"></option>
+            <option value="Breakfast"></option>
+            <option value="High"></option>
+            <option value="Continental"></option>
+            <option value="New Orleans"></option>
+            <option value="European"></option>
+            <option value="Espresso"></option>
+            <option value="Viennese"></option>
+            <option value="Italian"></option>
+            <option value="French"></option>
+        </datalist>
 <!--        SUBMIT BUTTON-->
         <div class="row justify-content-end">
             <input id="submit" type="submit"/>
