@@ -26,18 +26,20 @@
             </div>
 <!--    COFFEE TYPE SELECTOR-->
             <div class="col-6 d-flex flex-column coffee-selector-div">
-               <form class="d-flex flex-column">
+               <h2 class="text-center">Our Menu</h2>
+                <form class="d-flex flex-column">
                    <label for="roast-selection" class="form-label">Roast</label>
-                   <select id="roast-selection" class="selectbutton">
+                   <select id="roast-selection" class="selectbutton coffee-selectors">
                        <option>light</option>
                        <option>medium</option>
                        <option>dark</option>
                        <option>all</option>
                    </select>
 <!--                   COFFEE NAME SEARCHBAR-->
-                   <h3>Search Coffee by Name</h3>
-                   <input type="text" placeholder="Enter coffee name here" id="coffee-name">
-                   <input id="submit" type="submit">
+                   <label for="coffee-name" class="form-label">Search Coffee</label>
+                   <input type="text" placeholder="Enter coffee name here" id="coffee-name" class="coffee-selectors">
+                   <input id="submit" type="submit" class="btn-primary btn coffee-selectors">
+                   <hr>
 <!--                   OTHER SEARCH METHOD TO EXPLORE LATER-->
 <!--                   <label for="exampleDataList" class="form-label">Coffee Name</label>-->
 <!--                   <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">-->
@@ -64,19 +66,19 @@
 <!--                   <hr>-->
                </form>
 <!--ADD COFFEE SECTION-->
-                    <h2 class="addCoffee">Add a Coffee</h2>
-                    <form>
+                    <h2 class="addCoffee text-center">Add Custom Coffee</h2>
+                    <form class="d-flex flex-column">
 <!--                        SELECT NEW COFFEE ROAST-->
                         <label for="new-coffee-roast" class="form-label">Roast</label>
-                        <select id="new-coffee-roast">
+                        <select class="coffee-selectors" id="new-coffee-roast">
                             <option>light</option>
                             <option>medium</option>
                             <option>dark</option>
                         </select>
 <!--                        ADD NEW COFFEE NAME BY USER INPUT-->
                         <label for="new-coffee-name" class="form-label">Coffee Name</label>
-                        <input placeholder="Enter your new coffee name here" type="text" id="new-coffee-name">
-                        <input id="new-coffee-button" type="submit">
+                        <input class="coffee-selectors" placeholder="Enter your new coffee name here" type="text" id="new-coffee-name">
+                        <input id="new-coffee-button" type="submit" class="btn-primary btn coffee-selectors">
                     </form>
             </div>
         </section>

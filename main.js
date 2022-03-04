@@ -5,8 +5,8 @@ function renderCoffee(coffee) {
     var html = '<div class="coffee">';
     //THIS CLASS WILL HIDE ALL ID'S:
     html += '<div class="d-none">' + coffee.id + '</div>';
-    html += '<div><p>' + coffee.name + '</p></div>';
-    html += '<p>' + coffee.roast + '</p>';
+    html += '<div class="name"><p>' + coffee.name + '</p></div>';
+    html += '<p class="roast">' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;

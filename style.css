@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #f5f3f3;
+    font-family: "Noto Sans Ol Chiki";
+}
+
 table {
     border-collapse: collapse;
     margin: 15px 0;
@@ -11,6 +16,19 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+
+h1 {
+    padding-top: .75em;
+    font-weight: bold;
+    font-size: xxx-large;
+
+}
+
+h2 {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
 
 .coffee-selector-div {
     padding-right: 0;
@@ -31,4 +49,33 @@ td, th {
 
 .coffee {
     display: flex;
+    align-items: center;
+}
+
+.roast{
+    padding-left: 1em;
+    padding-top: .5em;
+    color: #8a8787;
+    font-style:;
+}
+
+.name {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: "Noto Sans Ol Chiki";
+
+}
+
+.form-label {
+    margin-top: .5em;
+    font-weight: bold;
+}
+
+#coffee-name, #new-coffee-name{
+    margin-bottom: 1em;
+
+}
+
+.coffee-selectors {
+    padding: .5em;
 }
