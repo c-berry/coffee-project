@@ -15,19 +15,19 @@ function renderCoffee(coffee) {
 function renderCoffees(coffees) {
     var html = '';
     //CYCLES THRU AND DISPLAYS LIGHT ROASTS ON PAGE INSIDE DIV:
-    for(var i = 0; i < coffees.length; ++i) {
+    for(var i = 0; i < coffees.length; i++) {
         if (coffees[i].roast === "light") {
         html += renderCoffee(coffees[i]);
         }
     }
     //CYCLES THRU AND DISPLAYS MEDIUM ROASTS ON PAGE INSIDE DIV:
-    for(var j = 0; j < coffees.length; ++j) {
+    for(var j = 0; j < coffees.length; j++) {
         if (coffees[j].roast === "medium") {
             html += renderCoffee(coffees[j]);
         }
     }
     //CYCLES THRU AND DISPLAYS DARK ROASTS ON PAGE INSIDE DIV:
-    for(var k = 0; k < coffees.length; ++k) {
+    for(var k = 0; k < coffees.length; k++) {
         if (coffees[k].roast === "dark") {
             html += renderCoffee(coffees[k]);
     }
@@ -37,9 +37,9 @@ function renderCoffees(coffees) {
 
 function updateCoffees(e) {
     //POTENTIALLY USEFUL FOR PAGES WITH NO BACKEND:
-    // if (e !== undefined) {
+    if (e !== undefined) {
         e.preventDefault();
-    // } // don't submit the form, we just want to update the data
+    } // don't submit the form, we just want to update the data
     //ADDED VARIABLE (searchCoffee)
     var searchCoffee = coffeeSearch.value; //.value PULLS INFO FROM coffeeSearch variable
     var selectedRoast = roastSelection.value; //.value IS ESSENTIAL!
@@ -108,7 +108,7 @@ var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 //NEW VARIABLES:
 //THIS VARIABLE RETRIEVES USER INPUT UPON COFFEE NAME SEARCH:
-var coffeeSearch = document.getElementById("coffee-text");
+var coffeeSearch = document.getElementById("coffee-name");
 //THIS VAR RETRIEVES SUBMITTED INFO OF NEW COFFEE:
 var newCoffeeSubmit = document.querySelector("#new-coffee-button");
 
