@@ -3,32 +3,37 @@
 <head>
 <!--    BOOTSTRAP FRAMEWORK LINK-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!--    FONT AWESOME LINK-->
+    <script src="https://kit.fontawesome.com/2d338dc08d.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
 <!--    VIEWPORT FOR DEVICE SCREEN SIZE-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Time!</title>
+    <title>Coffee!</title>
 <!--    CSS LINK-->
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <h1 class="text-center">Coffee!</h1>
-    <hr>
+<!--COFFEE IMAGE HEADER-->
+<div class="container-fluid px-0 py-5 my-4 bg-light text-center mt-0 coffee-image" style="background-image: url(img/coffee-header2.webp); width: 100%;">
+    <h1 class="display-1 bg-light opacity-50 text-center text-dark coffee-header ">Coffee Bar</h1>
+</div>
+<!--    <hr class="mt-0">-->
 <!--    CONTAINS ALL PAGE CONTENT-->
     <main class="container">
         <section class="row">
 <!--AREA DISPLAYING SELECTED COFFEES-->
-            <div class="col-6">
-                    <div id="coffees">
+            <div class=" col-lg-6 col-m-6  coffee-div">
+                    <div id="coffees" class="d-flex flex-wrap">
                         <div></div>
                         <p></p>
                     </div>
             </div>
 <!--    COFFEE TYPE SELECTOR-->
-            <div class="col-6 d-flex flex-column coffee-selector-div">
-               <h2 class="text-center">Our Menu</h2>
+            <div class="col-lg-6 col-m-6 d-flex flex-column coffee-selector-div">
+               <h2 class="text-center"><i class="fa-solid fa-mug-hot"></i>   Our Menu</h2>
                 <form class="d-flex flex-column">
-                   <label for="roast-selection" class="form-label">Roast</label>
+                   <label for="roast-selection" class="form-label"> Roast</label>
                    <select id="roast-selection" class="selectbutton coffee-selectors">
                        <option>light</option>
                        <option>medium</option>
@@ -38,7 +43,7 @@
 <!--                   COFFEE NAME SEARCHBAR-->
                    <label for="coffee-name" class="form-label">Search Coffee</label>
                    <input type="text" placeholder="Enter coffee name here" id="coffee-name" class="coffee-selectors">
-                   <input id="submit" type="submit" class="btn-primary btn coffee-selectors">
+                   <input id="submit" type="submit" value="Search" class="btn-dark btn coffee-selectors button">
                    <hr>
 <!--                   OTHER SEARCH METHOD TO EXPLORE LATER-->
 <!--                   <label for="exampleDataList" class="form-label">Coffee Name</label>-->
@@ -66,7 +71,7 @@
 <!--                   <hr>-->
                </form>
 <!--ADD COFFEE SECTION-->
-                    <h2 class="addCoffee text-center">Add Custom Coffee</h2>
+                    <h2 class="addCoffee text-center"><i class="fa-solid fa-mug-hot"></i>  Add Custom Coffee</h2>
                     <form class="d-flex flex-column">
 <!--                        SELECT NEW COFFEE ROAST-->
                         <label for="new-coffee-roast" class="form-label">Roast</label>
@@ -77,13 +82,17 @@
                         </select>
 <!--                        ADD NEW COFFEE NAME BY USER INPUT-->
                         <label for="new-coffee-name" class="form-label">Coffee Name</label>
-                        <input class="coffee-selectors" placeholder="Enter your new coffee name here" type="text" id="new-coffee-name">
-                        <input id="new-coffee-button" type="submit" class="btn-primary btn coffee-selectors">
+                        <input class="coffee-selectors" placeholder="Enter your custom coffee here" type="text" id="new-coffee-name">
+                        <input id="new-coffee-button" type="submit" value="Create"  class="btn-dark btn button mb-5 coffee-selectors ">
                     </form>
             </div>
         </section>
     </main>
+<!--<div class="container-fluid px-0 py-5 my-4 bg-light text-center mb-0 mt-0 coffee-image2" style="background-image: url(img/coffee-header2.jpeg.crdownload); width: 100%">-->
+<!--</div>-->
 <!--CUSTOM JS LINK-->
+<footer class="container-fluid bg-light text-center coffee-image" style="background-image: url(img/coffee-header2.webp); width: 100%">
+</footer>
     <script src="main.js"></script>
     <!--    BOOTSTRAP SCRIPT-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

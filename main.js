@@ -120,7 +120,7 @@ submitButton.addEventListener('click', updateCoffees);
 newCoffeeSubmit.addEventListener("click", createCoffee);
 
 // UPDATE CONTENT ON SELECTOR INPUT:
-// roastSelection.addEventListener('change', updateCoffees);
+roastSelection.addEventListener('change', updateCoffees);
 // UPDATE CONTENT ON KEYPRESS IN REALTIME:
 // coffeeSearch.addEventListener('keyup', updateCoffees);
 
