@@ -17,6 +17,10 @@ td, th {
     padding-left: 0;
 }
 
+.addCoffee {
+    font-size: 5em;
+}
+
 .button1 {
     width: 100%;
     margin-right: 0;

@@ -15,16 +15,7 @@
         <section class="row">
 <!--AREA DISPLAYING SELECTED COFFEES-->
             <div class="col-6">
-                <table>
-                    <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>NAME</th>
-                        <th>ROAST</th>
-                    </tr>
-                    </thead>
-                    <tbody id="coffees"></tbody>
-                </table>
+                    <div id="coffees"></div>
             </div>
 <!--    COFFEE TYPE SELECTOR-->
             <div class="col-6 d-flex flex-column coffee-div">
@@ -34,6 +25,7 @@
                        <option>light</option>
                        <option>medium</option>
                        <option>dark</option>
+                       <option>all</option>
                    </select>
                    <label for="exampleDataList" class="form-label">Coffee Name</label>
                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
@@ -63,8 +55,8 @@
 
 
 <!--ADD COFFEE SECTION-->
-                <div>
-                    <h2 class="">Add a Coffee</h2>
+
+                    <h2 class="addCoffee">Add a Coffee</h2>
                     <form class="">
                         <label for="roast-selection2" class="form-label">Roast</label>
                         <select id="roast-selection2">
@@ -73,7 +65,7 @@
                             <option>dark</option>
                         </select>
                     </form>
-                </div>
+
 
             </div>
         </section>
