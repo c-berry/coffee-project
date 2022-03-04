@@ -12,13 +12,13 @@ td, th {
     padding: 5px 10px;
 }
 
-.coffee-div {
+.coffee-selector-div {
     padding-right: 0;
     padding-left: 0;
 }
 
 .addCoffee {
-    font-size: 5em;
+    ;
 }
 
 .button1 {
@@ -27,4 +27,8 @@ td, th {
     margin-left: 0;
     padding-right: 0;
     padding-left: 0;
+}
+
+.coffee {
+    display: flex;
 }
